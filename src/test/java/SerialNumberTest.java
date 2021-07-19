@@ -9,8 +9,8 @@ public class SerialNumberTest {
     public void getSerialNumber() {
         SerialNumber serialNumber = new SerialNumber();
 
-        serialNumber.setNumber(1);
-        Assert.assertEquals(serialNumber.getSerialNumber(), "1st");
+        serialNumber.setNumber(11);
+        Assert.assertEquals("11th", serialNumber.getSerialNumber());
 
         serialNumber.setNumber(2);
         Assert.assertEquals(serialNumber.getSerialNumber(), "2nd");
